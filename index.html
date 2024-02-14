@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry-Genius</title>
+</head>
+
+<body class="m-10">
+    <header></header>
+    <main class="flex flex-col space-x-4 lg:flex-row md:flex-row">
+        <!-- Card section starts here -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Triangle Section -->
+            <div class="card bg-base-100 shadow-xl pt-4">
+                <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                <div class="card-body  flex flex-col items-center space-y-4">
+                    <h2 class="card-title">Triangle!</h2>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="b" class="w-20 px-2 py-1 outline-none" id="triangle-base">
+                        <span>cm</span>
+                        <input type="text" placeholder="h" class="w-20 px-2 py-1 outline-none" id="triangle-height">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <span>Area = </span> <span id="area-triangle"></span> <span>cm <sup>2</sup></span>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button class="btn btn-primary w-full" id="triangle-btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Rectangle Section -->
+            <div class="card bg-base-100 shadow-xl pt-4">
+                <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                <div class="card-body  flex flex-col items-center space-y-4">
+                    <h2 class="card-title">Rectangle!</h2>
+                    <p>Area (A) = w X l</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="w" class="w-20 px-2 py-1 outline-none" id="rectangle-base">
+                        <span>cm</span>
+                        <input type="text" placeholder="l" class="w-20 px-2 py-1 outline-none" id="rectangle-length">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <span>Area = </span> <span id="area-rectangle"></span> <span>cm <sup>2</sup></span>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button class="btn btn-primary w-full" id="rectangle-btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Parallelogram Section -->
+            <div class="card bg-base-100 shadow-xl pt-4">
+                <figure class="p-6"><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                <div class="card-body  flex flex-col items-center space-y-4">
+                    <h2 class="card-title">Parallelogram!</h2>
+                    <p>Area (A) = b X h</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="b" class="w-20 px-2 py-1 outline-none" id="paralellogram-base">
+                        <span>cm</span>
+                        <input type="text" placeholder="h" class="w-20 px-2 py-1 outline-none" id="paralellogram-length">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <span>Area = </span> <span id="area-paralellogram"></span> <span>cm <sup>2</sup></span>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button class="btn btn-primary w-full" id="parallelogram-btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Rhombus Section -->
+            <div class="card bg-base-100 shadow-xl pt-4">
+                <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                <div class="card-body  flex flex-col items-center space-y-4">
+                    <h2 class="card-title">Rhombus!</h2>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="b" class="w-20 px-2 py-1 outline-none">
+                        <span>cm</span>
+                        <input type="text" placeholder="h" class="w-20 px-2 py-1 outline-none">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <span>Area = </span> <span id="area-rhombus"></span> <span>cm <sup>2</sup></span>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button class="btn btn-primary w-full" id="rhombus-btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pentagon Section -->
+            <div class="card bg-base-100 shadow-xl pt-4">
+                <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                <div class="card-body  flex flex-col items-center space-y-4">
+                    <h2 class="card-title">Pentagon!</h2>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="b" class="w-20 px-2 py-1 outline-none">
+                        <span>cm</span>
+                        <input type="text" placeholder="h" class="w-20 px-2 py-1 outline-none">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <span>Area = </span> <span id="area-pentagon"></span> <span>cm <sup>2</sup></span>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ellipse Section -->
+            <div class="card bg-base-100 shadow-xl pt-4">
+                <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                <div class="card-body  flex flex-col items-center space-y-4">
+                    <h2 class="card-title">Ellipse!</h2>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <div class="flex items-center space-x-2">
+                        <input type="text" placeholder="b" class="w-20 px-2 py-1 outline-none">
+                        <span>cm</span>
+                        <input type="text" placeholder="h" class="w-20 px-2 py-1 outline-none">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <span>Area = </span> <span id="area-ellipse"></span> <span>cm <sup>2</sup></span>
+                    </div>
+                    <div class="card-actions w-full">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Card section ends here -->
+
+        <!-- Calcualtion section starts here -->
+        <section class="w-80 text-center p-4 border border-gray-400 rounded-2xl mt-4 lg:mt-0">
+            <h3 class="font-bold text-2xl underline">Calculate</h3>
+        </section>
+        <!-- Calculation section ends here -->
+    </main>
+    <footer></footer>
+
+    <script src="scripts/triangle.js"></script>
+    <script src="scripts/rectangle.js"></script>
+    <script src="scripts/paralellogram.js"></script>
+    <script src="scripts/calculations.js"></script>
+</body>
+
+</html>
